@@ -1,24 +1,33 @@
 #include <stdio.h>
-int main() {
-    int x;
-    printf("enter the value of x:");
-    scanf("%d", &x);
-        if(x>0){
-        printf("the no entered is a positive integer %d\n", x);
+ #include <stdlib.h>
+#include <time.h>
+/* more headers goes there */
+
+/* betty style doc for function main goes there */
+int main(void)
+{
+	int n;
+	int x;
+    printf("enter the value of n:");
+    scanf("%d", &n);
+	if(n>0){
+        printf("the no entered is a positive integer %d", n);
         }
-        
-        printf("enter the value of x:");
-    scanf("%d", &x);
-         if(x<0){
-        printf("the no entered is a negative integer %d\n", x);
+        else if(n<0){
+        printf("the no entered is a negative integer %d", n);
         }
-        printf("enter the value of x:");
-    scanf("%d", &x);
-        if(x==0)
+        else{
         printf("the no entered is zero");
-        
-        
-    
-    
-    return 0;
+        }
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	/* your code goes there */
+	return (0);
 }
+    
+        
+        
+    
+    
+
