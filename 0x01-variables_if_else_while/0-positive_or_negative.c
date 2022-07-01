@@ -4,14 +4,19 @@ int main() {
     printf("enter the value of x:");
     scanf("%d", &x);
         if(x>0){
-        printf("the no entered is a positive integer %d", x);
+        printf("the no entered is a positive integer %d\n", x);
         }
-        else if(x<0){
-        printf("the no entered is a negative integer %d", x);
+        
+        printf("enter the value of x:");
+    scanf("%d", &x);
+         if(x<0){
+        printf("the no entered is a negative integer %d\n", x);
         }
-        else{
+        printf("enter the value of x:");
+    scanf("%d", &x);
+        if(x==0)
         printf("the no entered is zero");
-        }
+        
         
     
     
