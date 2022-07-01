@@ -7,25 +7,33 @@
 int main(void)
 {
 	int n;
-	int x;
-    printf("enter the value of n:");
-    scanf("%d", &n);
-	if(n>0){
-        printf("the no entered is a positive integer %d", n);
-        }
-        else if(n<0){
-        printf("the no entered is a negative integer %d", n);
-        }
-        else{
-        printf("the no entered is zero");
-        }
-
+			
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	printf("%d",n);
+	if(n>=0){
+		printf("is positive\n",n);
+	}
+	
+	if(n<=0){
+		printf("is negative\n",n);
+	}	
+	
+	if(n==0){
+		printf("is zero");
+	}
+		
+		
+
+		
+		
+	
+	
+
 	/* your code goes there */
 	return (0);
+
 }
-    
         
         
     
