@@ -10,20 +10,11 @@
  * You can only use _putchar to print.
  */
 
-void print_array(int *a, int n)
-{
-	int i;
-
-	i = 0;
-	for (n--; n >= 0; n--, i++)
-	{
-		printf("%d", a[i]);
-		if (n > 0)
-		{
-			printf(", ");
-		}
-	}
-	printf("\n");
-
+void print_array(int *a, int n){
+ int i;
+ printf("print the values of the array\n");
+    for(i=0; i<n; i++){
+ 	printf("%d\n", a[i]);
+ }
 }
 
