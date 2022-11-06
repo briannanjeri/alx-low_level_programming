@@ -6,15 +6,13 @@
  * Return: void
 */
 
-void reverse_array(int *a, int n)
-{
-	int i = 0, half;
-
-	for (half = n / 2; half > 0; half--, i++)
-	{
-		a[n - i - 1] += a[i];
-		a[i] = a[n - i - 1] - a[i];
-		a[n - i - 1] = a[n - i - 1] - a[i];
-	}
+void reverse_array(int *a, int n){
+    int i,temp;
+   for(i=0; i<n/2; i++){
+   	temp=a[i];
+   	a[i]=a[n-i-1];
+   	a[n-i-1]=temp;
+   }
+  
 }
 
